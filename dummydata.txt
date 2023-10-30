@@ -9,15 +9,15 @@ insert into employees (id, name, position, department, salary) values (1008, 'Br
 insert into employees (id, name, position, department, salary) values (1009, 'Lulu Farge', 'Salesperson', 'Human Resource', 2132.5);
 insert into employees (id, name, position, department, salary) values (1010, 'Koral Prescote', 'Manager', 'Marketing', 2548.66);
 
-insert into customers (customer_id, customer_name, city) values (1001, 'Alain Conwell', 'Vårdö');
+insert into customers (customer_id, customer_name, city) values (1001, 'Alain Conwell', 'New York');
 insert into customers (customer_id, customer_name, city) values (1002, 'Robbyn Mendes', 'Riangbaring');
 insert into customers (customer_id, customer_name, city) values (1003, 'Koralle Prue', 'Bireun');
 insert into customers (customer_id, customer_name, city) values (1004, 'Rickert Steeples', 'Hanggan');
 insert into customers (customer_id, customer_name, city) values (1005, 'Nananne Treverton', 'Judaydah');
-insert into customers (customer_id, customer_name, city) values (1006, 'Genna Idenden', 'Gwangju');
+insert into customers (customer_id, customer_name, city) values (1006, 'Genna Idenden', 'New York');
 insert into customers (customer_id, customer_name, city) values (1007, 'Henrietta Note', 'Bahe');
-insert into customers (customer_id, customer_name, city) values (1008, 'Beryl Easson', 'Asia');
-insert into customers (customer_id, customer_name, city) values (1009, 'Renato Smithen', 'Kalynivka');
+insert into customers (customer_id, customer_name, city) values (1008, 'Beryl Easson', 'New York');
+insert into customers (customer_id, customer_name, city) values (1009, 'Renato Smithen', 'New York');
 insert into customers (customer_id, customer_name, city) values (1010, 'Emilio McGlynn', 'Matsue-shi');
 
 insert into orders (order_id, order_date, customer_id, total_amount) values (1001, '2023-10-06', 1009, 152.87);

@@ -1,0 +1,4 @@
+SELECT c.customer_name, o.order_date, o.total_amount, avg(o.total_amount) over (partition by c.customer_id) AS 'Average total amount'
+FROM customers c
+JOIN orders o ON c.customer_id = o.customer_id
+WHERE c.city = "New York"
