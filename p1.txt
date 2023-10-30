@@ -1,0 +1,45 @@
+CREATE TABLE employees(
+	id INT,
+	name VARCHAR(50),
+	position VARCHAR(50),
+	department VARCHAR(50),
+	salary FLOAT(2),
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE orders(
+	order_id INT,
+	order_date DATE,
+	customer_id INT,
+	total_amount FLOAT(2),
+	PRIMARY KEY (order_id),
+	FOREIGN KEY (customer_id) REFERENCES customers(customer_id) ON DELETE CASCADE
+);
+
+CREATE TABLE sales(
+	order_id INT,
+	customer_id INT,
+	product_id INT,
+	quantity INT,
+	sale_date DATE,
+
+	PRIMARY KEY (order_id),
+	FOREIGN KEY (order_id) REFERENCES orders(order_id) ON DELETE CASCADE,
+	FOREIGN KEY (customer_id) REFERENCES customers(customer_id) ON DELETE CASCADE,
+	FOREIGN KEY (product_id) REFERENCES inventories(product_id) ON DELETE CASCADE
+);
+
+CREATE TABLE customers (
+	customer_id INT,
+	customer_name VARCHAR(50),
+	city VARCHAR(50),
+	PRIMARY KEY (customer_id)
+);
+
+CREATE TABLE inventories(
+	product_id INT,
+	product_name VARCHAR(50),
+	quantity INT,
+	price FLOAT(2),
+	PRIMARY KEY (product_id)
+);
