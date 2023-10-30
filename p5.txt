@@ -2,7 +2,13 @@ SELECT department, AVG(salary) AS 'Average salary'
 FROM employees
 GROUP BY department;
 
-SELECT name, position, salary
+CREATE VIEW dept_highest_salary AS
+SELECT department, MAX(salary) AS max_salary
 FROM employees
-ORDER BY salary DESC
-LIMIT 3;
+GROUP BY department;
+
+SELECT e.department, d.max_salary, e.name
+FROM employees e
+JOIN dept_highest_salary d ON e.salary = d.max_salary;
+
+DROP VIEW dept_highest_salary;

@@ -1,6 +1,6 @@
 insert into employees (id, name, position, department, salary) values (1001, 'Gottfried Slavin', 'Stocker', 'Marketing', 1905.79);
 insert into employees (id, name, position, department, salary) values (1002, 'Elysia Sybe', 'Manager', 'Marketing', 2831.21);
-insert into employees (id, name, position, department, salary) values (1003, 'Filippa Broomfield', 'Cashier', 'Human Resource', 2660.35);
+insert into employees (id, name, position, department, salary) values (1003, 'Filippa Broomfield', 'Cashier', 'Human Resource', 52660.35);
 insert into employees (id, name, position, department, salary) values (1004, 'Christabella Salleir', 'Manager', 'IT', 2935.57);
 insert into employees (id, name, position, department, salary) values (1005, 'Corny Izard', 'Stocker', 'Finance', 1177.61);
 insert into employees (id, name, position, department, salary) values (1006, 'Marj Berthomieu', 'Salesperson', 'Human Resource', 1346.12);
