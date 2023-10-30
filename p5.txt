@@ -1,0 +1,8 @@
+SELECT department, AVG(salary) AS 'Average salary'
+FROM employees
+GROUP BY department;
+
+SELECT name, position, salary
+FROM employees
+ORDER BY salary DESC
+LIMIT 3;
