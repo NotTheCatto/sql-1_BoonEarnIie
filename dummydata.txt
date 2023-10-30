@@ -1,0 +1,54 @@
+insert into employees (id, name, position, department, salary) values (1001, 'Gottfried Slavin', 'Stocker', 'Marketing', 1905.79);
+insert into employees (id, name, position, department, salary) values (1002, 'Elysia Sybe', 'Manager', 'Marketing', 2831.21);
+insert into employees (id, name, position, department, salary) values (1003, 'Filippa Broomfield', 'Cashier', 'Human Resource', 2660.35);
+insert into employees (id, name, position, department, salary) values (1004, 'Christabella Salleir', 'Manager', 'IT', 2935.57);
+insert into employees (id, name, position, department, salary) values (1005, 'Corny Izard', 'Stocker', 'Finance', 1177.61);
+insert into employees (id, name, position, department, salary) values (1006, 'Marj Berthomieu', 'Salesperson', 'Human Resource', 1346.12);
+insert into employees (id, name, position, department, salary) values (1007, 'Linda Whittock', 'Stocker', 'Marketing', 1346.68);
+insert into employees (id, name, position, department, salary) values (1008, 'Braden Cleaton', 'Cashier', 'Finance', 1394.2);
+insert into employees (id, name, position, department, salary) values (1009, 'Lulu Farge', 'Salesperson', 'Human Resource', 2132.5);
+insert into employees (id, name, position, department, salary) values (1010, 'Koral Prescote', 'Manager', 'Marketing', 2548.66);
+
+insert into customers (customer_id, customer_name, city) values (1001, 'Alain Conwell', 'Vårdö');
+insert into customers (customer_id, customer_name, city) values (1002, 'Robbyn Mendes', 'Riangbaring');
+insert into customers (customer_id, customer_name, city) values (1003, 'Koralle Prue', 'Bireun');
+insert into customers (customer_id, customer_name, city) values (1004, 'Rickert Steeples', 'Hanggan');
+insert into customers (customer_id, customer_name, city) values (1005, 'Nananne Treverton', 'Judaydah');
+insert into customers (customer_id, customer_name, city) values (1006, 'Genna Idenden', 'Gwangju');
+insert into customers (customer_id, customer_name, city) values (1007, 'Henrietta Note', 'Bahe');
+insert into customers (customer_id, customer_name, city) values (1008, 'Beryl Easson', 'Asia');
+insert into customers (customer_id, customer_name, city) values (1009, 'Renato Smithen', 'Kalynivka');
+insert into customers (customer_id, customer_name, city) values (1010, 'Emilio McGlynn', 'Matsue-shi');
+
+insert into orders (order_id, order_date, customer_id, total_amount) values (1001, '2023-10-06', 1009, 152.87);
+insert into orders (order_id, order_date, customer_id, total_amount) values (1002, '2022-10-17', 1004, 231.87);
+insert into orders (order_id, order_date, customer_id, total_amount) values (1003, '2022-07-06', 1006, 19.95);
+insert into orders (order_id, order_date, customer_id, total_amount) values (1004, '2022-11-19', 1001, 142.19);
+insert into orders (order_id, order_date, customer_id, total_amount) values (1005, '2023-04-18', 1008, 67.53);
+insert into orders (order_id, order_date, customer_id, total_amount) values (1006, '2023-03-18', 1005, 125.11);
+insert into orders (order_id, order_date, customer_id, total_amount) values (1007, '2022-07-07', 1007, 162.97);
+insert into orders (order_id, order_date, customer_id, total_amount) values (1008, '2022-07-27', 1007, 203.42);
+insert into orders (order_id, order_date, customer_id, total_amount) values (1009, '2022-12-25', 1003, 170.75);
+insert into orders (order_id, order_date, customer_id, total_amount) values (1010, '2023-07-04', 1004, 238.45);
+
+insert into inventories (product_id, product_name, quantity, price) values (1001, 'Chips - Miss Vickies', 6, 8.42);
+insert into inventories (product_id, product_name, quantity, price) values (1002, 'Puree - Strawberry', 4, 6.9);
+insert into inventories (product_id, product_name, quantity, price) values (1003, 'Syrup - Golden, Lyles', 9, 9.87);
+insert into inventories (product_id, product_name, quantity, price) values (1004, 'Sherry - Dry', 6, 15.58);
+insert into inventories (product_id, product_name, quantity, price) values (1005, 'Cookie Dough - Oatmeal Rasin', 4, 15.26);
+insert into inventories (product_id, product_name, quantity, price) values (1006, 'Cheese - Brie', 1, 12.06);
+insert into inventories (product_id, product_name, quantity, price) values (1007, 'Couscous', 9, 18.68);
+insert into inventories (product_id, product_name, quantity, price) values (1008, 'Beef - Ox Tongue, Pickled', 4, 14.59);
+insert into inventories (product_id, product_name, quantity, price) values (1009, 'Plasticspoonblack', 9, 11.7);
+insert into inventories (product_id, product_name, quantity, price) values (1010, 'Lamb - Leg, Boneless', 3, 17.28);
+
+insert into sales (order_id, customer_id, product_id, quantity, sale_date) values (1010, 1005, 1002, 9, '2023-09-07');
+insert into sales (order_id, customer_id, product_id, quantity, sale_date) values (1007, 1002, 1005, 6, '2022-07-19');
+insert into sales (order_id, customer_id, product_id, quantity, sale_date) values (1005, 1009, 1005, 9, '2023-03-27');
+insert into sales (order_id, customer_id, product_id, quantity, sale_date) values (1006, 1002, 1003, 6, '2022-09-03');
+insert into sales (order_id, customer_id, product_id, quantity, sale_date) values (1009, 1002, 1006, 6, '2023-05-16');
+insert into sales (order_id, customer_id, product_id, quantity, sale_date) values (1009, 1001, 1005, 5, '2022-07-01');
+insert into sales (order_id, customer_id, product_id, quantity, sale_date) values (1001, 1007, 1004, 9, '2023-05-15');
+insert into sales (order_id, customer_id, product_id, quantity, sale_date) values (1002, 1008, 1010, 10, '2023-08-01');
+insert into sales (order_id, customer_id, product_id, quantity, sale_date) values (1010, 1009, 1006, 8, '2022-10-12');
+insert into sales (order_id, customer_id, product_id, quantity, sale_date) values (1009, 1007, 1010, 7, '2022-09-10');
