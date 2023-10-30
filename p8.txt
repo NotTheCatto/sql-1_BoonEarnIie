@@ -1,0 +1,7 @@
+CREATE INDEX idx_dept
+ON employees (department);
+
+/*
+1. The department column is selected since it is potentially queried more often compared to the salary column.
+2. Indexed columns take longer to update and since salary updates more frequently because of pay raises and cuts, it is not suitable to be indexed.
+*/
